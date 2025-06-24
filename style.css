@@ -244,7 +244,7 @@ section {
     padding: 0 12px 0 0;
 }
 
-@media (max-width:1023px) {
+@media (max-width: 1023px) {
     header {
         padding: 12px 20px;
     }
@@ -273,10 +273,19 @@ section {
         flex-direction: column;
         align-items: center;
     }
-
 }
 
-@media (max-width:641px) {
+@media (max-width: 768px) {
+    .main {
+        background-attachment: scroll;
+        background-position: top;
+        background-size: contain;
+        padding: 100px 20px;
+        min-height: 80vh;
+    }
+}
+
+@media (max-width: 641px) {
     body {
         font-size: 12px;
     }
@@ -290,10 +299,9 @@ section {
     }
 }
 
-@media (max-width:300px) {
+@media (max-width: 300px) {
     body {
         font-size: 10px;
-
     }
 
     .project-card {
