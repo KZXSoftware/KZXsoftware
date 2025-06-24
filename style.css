@@ -9,6 +9,10 @@
     color: #008f40;
 }
 
+body {
+    background-color: #000;
+}
+
 header {
     background-color: #000000;
     width: 100%;
@@ -49,11 +53,16 @@ section {
     width: 100%;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background: url(images/LOGO.png) no-repeat center center;
+    padding: 100px 20px;
+    background-image: url(images/LOGO.png);
     background-size: cover;
-    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: #000;
+    text-align: center;
 }
 
 .main h2 {
@@ -261,11 +270,11 @@ section {
         padding: 80px 20px;
     }
 
-    .main-content h2 {
-        font-size: 1em;
+    .main h2 {
+        font-size: 1.1em;
     }
 
-    .main-content h3 {
+    .main h3 {
         font-size: 1.6em;
     }
 
@@ -277,21 +286,20 @@ section {
 
 @media (max-width: 768px) {
     .main {
-        background-attachment: scroll;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-color: #000;
-        padding: 60px 20px;
-        min-height: 100vh;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
+        padding: 80px 15px;
     }
 
-    .main h2,
+    .main h2 {
+        font-size: 1.1em;
+    }
+
     .main h3 {
-        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .main-btn {
+        font-size: 1em;
+        padding: 0.8em 1.5em;
     }
 }
 
@@ -300,11 +308,11 @@ section {
         font-size: 12px;
     }
 
-    .main-content h2 {
-        font-size: 0.8em;
+    .main h2 {
+        font-size: 1em;
     }
 
-    .main-content h3 {
+    .main h3 {
         font-size: 1.4em;
     }
 }
