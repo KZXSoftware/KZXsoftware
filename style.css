@@ -58,9 +58,9 @@ section {
     align-items: center;
     padding: 100px 20px;
     background-image: url(images/LOGO.png);
-    background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /* Important fix */
     background-color: #000;
     text-align: center;
 }
@@ -253,6 +253,8 @@ section {
     padding: 0 12px 0 0;
 }
 
+/* RESPONSIVE STYLES */
+
 @media (max-width: 1023px) {
     header {
         padding: 12px 20px;
@@ -286,11 +288,13 @@ section {
 
 @media (max-width: 768px) {
     .main {
+        min-height: 70vh;
         padding: 80px 15px;
+        background-size: contain;
     }
 
     .main h2 {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
     .main h3 {
@@ -309,7 +313,7 @@ section {
     }
 
     .main h2 {
-        font-size: 1em;
+        font-size: 0.9em;
     }
 
     .main h3 {
